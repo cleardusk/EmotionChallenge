@@ -233,5 +233,5 @@ def create_list_test():
 
 
 if __name__ == '__main__':
-    # create_list_train()
+    create_list_train()
     create_list_test()
