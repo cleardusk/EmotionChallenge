@@ -1,0 +1,8 @@
+.idea
+*.pyc
+crop_align/build
+crop_align/*.pyc
+cnn/*.pyc
+cnn/snapshot
+cnn/*.log
+cnn/predictions*
