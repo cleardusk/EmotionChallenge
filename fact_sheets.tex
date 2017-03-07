@@ -19,10 +19,13 @@
 Jianzhu, Guo
 \item Team leader address, phone number and email 
 
-guojianzhu1994@foxmail.com; 86-15600118066; 
+Address: No.95 Zhongguancun East Road, Haidian District, Beijing 100190, China
+Email: guojianzhu1994@foxmail.com
+Phone: 86-15600118066
 \item Rest of the team members      
 
-SZhou; Jinlin, Wu
+Shuai Zhou
+Jilin, Wu
 \item Team website URL (if any)                   
 \item Affiliation
 \end{itemize}
@@ -34,7 +37,7 @@ SZhou; Jinlin, Wu
 \item Final score                                               
 \item General method description     
 
-For each ID, use the normalized landmarks as feature, and use SVM as the classier                            
+We fisrt extract the each ID's lamdmark feature, and subsract it's mean, then we get each ID's landmark offset of $R^{136\times1}$. And we use an modified AlexNet to extract the $R^{256\times1}$ feature of the $224\times224$ image on the second-last full connected layer. Then we concact the two features, and connect to a full connected layer. We use Hinge Loss to train the net, the ground truth is a single label indicating the complementary and dominant emotion.
 \item References                                               
 \item Representative image / diagram of the method             
 \item Describe data preprocessing techniques applied (if any)   
@@ -44,6 +47,8 @@ For each ID, use the normalized landmarks as feature, and use SVM as the classie
 \section{Face Landmarks Detection}
 \subsection{Features / Data representation}
 Describe features used or data representation model FOR FACE LANDMARKS DETECTION (if any)
+
+We use Dlib open source library to extract the landmark.
 
 \subsection{Dimensionality reduction}
 Dimensionality reduction technique applied FOR FACE LANDMARKS DETECTION (if any)
@@ -105,6 +110,7 @@ Method complexity FOR COMPLEMENTARY EMOTION RECOGNITION
 \subsection{Features / Data representation}
 Describe features used or data representation model FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
 
+Landmark offset and AlextNet feature extraction.
 \subsection{Dimensionality reduction}
 Dimensionality reduction technique applied FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
 
@@ -128,6 +134,8 @@ Method complexity FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION
 \item Which pre-trained or external methods have been used (for any stage, if any) 
 \item Which additional data has been used in addition to the provided training and validation data (at any stage, if any) 
 \item Qualitative advantages of the proposed solution
+
+If takes advantage of the geometry feature and texture pattern.
 \item Results of the comparison to other approaches (if any)
 \item Novelty degree of the solution and if is has been previously published
 \end{itemize}
@@ -137,14 +145,14 @@ Method complexity FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION
 \begin{itemize}
 \item Language and implementation details (including platform, memory, parallelization requirements)
 
-We use Python, with sklearn and dlib package.
+We use Python with OpenCV and Dlib package and Caffe deep learning framework.
 \item Detailed list of prerequisites for compilation
 \item Human effort required for implementation, training and validation?
 \item Training/testing expended time? 
 
-Training takes about six minutes in i7-4720, testing takes just several seconds.
+Training takes about an hour on Titan-X GPU, validation of 7000 images takes about half minute.
 \item General comments and impressions of the challenge?
 
-The task is hard, and the limited size of training data may not be suited for CNN. So we give SVM a try. The current work is very rough (and the code is not well formatted), and  we believe there are many places that can be improved.
+The task is hard, and it's hard to find effective texture feature to do this challenge.
 \end{itemize}
 \end{document}

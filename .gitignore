@@ -6,3 +6,4 @@ cnn/*.pyc
 cnn/snapshot
 cnn/*.log
 cnn/predictions*
+tmp
