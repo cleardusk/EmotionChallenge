@@ -1,0 +1,150 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Emotion challenge fact sheet}
+\author{iCV}
+\date{February 2017}
+
+\begin{document}
+
+\maketitle
+
+\section{Team details}
+
+\begin{itemize}
+\item Team name 
+                              
+\item Team leader name                           
+
+Jianzhu, Guo
+\item Team leader address, phone number and email 
+
+guojianzhu1994@foxmail.com; 86-15600118066; 
+\item Rest of the team members      
+
+SZhou; Jinlin, Wu
+\item Team website URL (if any)                   
+\item Affiliation
+\end{itemize}
+
+\section{Contribution details}
+
+\begin{itemize}
+\item Title of the contribution                                  
+\item Final score                                               
+\item General method description     
+
+For each ID, use the normalized landmarks as feature, and use SVM as the classier                            
+\item References                                               
+\item Representative image / diagram of the method             
+\item Describe data preprocessing techniques applied (if any)   
+\end{itemize}
+
+
+\section{Face Landmarks Detection}
+\subsection{Features / Data representation}
+Describe features used or data representation model FOR FACE LANDMARKS DETECTION (if any)
+
+\subsection{Dimensionality reduction}
+Dimensionality reduction technique applied FOR FACE LANDMARKS DETECTION (if any)
+
+\subsection{Compositional model}
+Compositional model used, i.e. pictorial structure FOR FACE LANDMARKS DETECTION (if any)
+
+\subsection{Learning strategy}
+Learning strategy applied FOR FACE LANDMARKS DETECTION (if any)
+
+\subsection{Other techniques}
+Other technique/strategy used not included in previous items FOR FACE LANDMARKS DETECTION (if any)
+
+\subsection{Method complexity}
+Method complexity FOR FACE LANDMARKS DETECTION
+
+
+\section{Dominant emotion recognition}
+\subsection{Features / Data representation}
+Describe features used or data representation model FOR DOMINANT EMOTION RECOGNITION (if any)
+
+\subsection{Dimensionality reduction}
+Dimensionality reduction technique applied FOR DOMINANT EMOTION RECOGNITION (if any)
+
+\subsection{Compositional model}
+Compositional model used, i.e. pictorial structure FOR DOMINANT EMOTION RECOGNITION (if any)
+
+\subsection{Learning strategy}
+Learning strategy applied FOR DOMINANT EMOTION RECOGNITION (if any)
+
+\subsection{Other techniques}
+Other technique/strategy used not included in previous items FOR DOMINANT EMOTION RECOGNITION (if any)
+
+\subsection{Method complexity}
+Method complexity FOR DOMINANT EMOTION RECOGNITION
+
+
+\section{Complementary emotion recognition}
+\subsection{Features / Data representation}
+Describe features used or data representation model FOR COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Dimensionality reduction}
+Dimensionality reduction technique applied FOR COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Compositional model}
+Compositional model used, i.e. pictorial structure FOR COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Learning strategy}
+Learning strategy applied FOR COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Other techniques}
+Other technique/strategy used not included in previous items FOR COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Method complexity}
+Method complexity FOR COMPLEMENTARY EMOTION RECOGNITION
+
+
+\section{Joint dominant and complementary emotion recognition}
+\subsection{Features / Data representation}
+Describe features used or data representation model FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Dimensionality reduction}
+Dimensionality reduction technique applied FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Compositional model}
+Compositional model used, i.e. pictorial structure FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Learning strategy}
+Learning strategy applied FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Other techniques}
+Other technique/strategy used not included in previous items FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION (if any)
+
+\subsection{Method complexity}
+Method complexity FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION
+
+
+\section{Global Method Description}
+
+\begin{itemize}
+\item Total method complexity: all stages
+\item Which pre-trained or external methods have been used (for any stage, if any) 
+\item Which additional data has been used in addition to the provided training and validation data (at any stage, if any) 
+\item Qualitative advantages of the proposed solution
+\item Results of the comparison to other approaches (if any)
+\item Novelty degree of the solution and if is has been previously published
+\end{itemize}
+
+\section{Other details}
+
+\begin{itemize}
+\item Language and implementation details (including platform, memory, parallelization requirements)
+
+We use Python, with sklearn and dlib package.
+\item Detailed list of prerequisites for compilation
+\item Human effort required for implementation, training and validation?
+\item Training/testing expended time? 
+
+Training takes about six minutes in i7-4720, testing takes just several seconds.
+\item General comments and impressions of the challenge?
+
+The task is hard, and the limited size of training data may not be suited for CNN. So we give SVM a try. The current work is very rough (and the code is not well formatted), and  we believe there are many places that can be improved.
+\end{itemize}
+\end{document}
