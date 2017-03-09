@@ -12,40 +12,44 @@
 \section{Team details}
 
 \begin{itemize}
-\item Team name 
-                              
-\item Team leader name                           
+\item Team name
+
+CBSR-CASIA
+
+\item Team leader name
 
 Jianzhu, Guo
-\item Team leader address, phone number and email 
+\item Team leader address, phone number and email
 
 Address: No.95 Zhongguancun East Road, Haidian District, Beijing 100190, China
 Email: guojianzhu1994@foxmail.com
 Phone: 86-15600118066
-\item Rest of the team members      
+\item Rest of the team members
 
-Shuai Zhou \\
+Shuai, Zhou \\
 Jilin, Wu \\
+Jun, Wan \\
 Xiangyu, Zhu \\
-Zhen, Lei \\
-Jun, Wan
-\item Team website URL (if any)                   
+Zhen, Lei 
+\item Team website URL (if any)
 
-http://www.cbsr.ia.ac.cn/users/jwan/
+http://www.cbsr.ia.ac.cn/users/jwan/research.html 
 \item Affiliation
+
+National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences (CASIA).
 \end{itemize}
 
 \section{Contribution details}
 
 \begin{itemize}
-\item Title of the contribution                                  
-\item Final score                                               
-\item General method description     
+\item Title of the contribution
+\item Final score
+\item General method description
 
 We fisrt extract the each ID's lamdmark feature, and subsract it's mean, then we get each ID's landmark offset of $R^{136\times1}$. And we use an modified AlexNet to extract the $R^{256\times1}$ feature of the $224\times224$ image on the second-last full connected layer. Then we concact the two features, and connect to a full connected layer. We use Hinge Loss to train the net, the ground truth is a single label indicating the complementary and dominant emotion.
-\item References                                               
-\item Representative image / diagram of the method             
-\item Describe data preprocessing techniques applied (if any)   
+\item References
+\item Representative image / diagram of the method
+\item Describe data preprocessing techniques applied (if any)
 \end{itemize}
 
 
@@ -136,8 +140,8 @@ Method complexity FOR JOINT DOMINANT AND COMPLEMENTARY EMOTION RECOGNITION
 
 \begin{itemize}
 \item Total method complexity: all stages
-\item Which pre-trained or external methods have been used (for any stage, if any) 
-\item Which additional data has been used in addition to the provided training and validation data (at any stage, if any) 
+\item Which pre-trained or external methods have been used (for any stage, if any)
+\item Which additional data has been used in addition to the provided training and validation data (at any stage, if any)
 \item Qualitative advantages of the proposed solution
 
 If takes advantage of the geometry feature and texture pattern.
@@ -153,7 +157,7 @@ If takes advantage of the geometry feature and texture pattern.
 We use Python with OpenCV and Dlib package and Caffe deep learning framework.
 \item Detailed list of prerequisites for compilation
 \item Human effort required for implementation, training and validation?
-\item Training/testing expended time? 
+\item Training/testing expended time?
 
 Training takes about an hour on Titan-X GPU, validation of 7000 images takes about half minute.
 \item General comments and impressions of the challenge?
