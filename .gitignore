@@ -6,4 +6,6 @@ cnn/*.pyc
 cnn/snapshot
 cnn/*.log
 cnn/predictions*
+data/face_224/*/
+data/*.tar
 tmp

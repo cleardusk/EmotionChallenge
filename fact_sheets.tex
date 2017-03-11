@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{hyperref}
 
 \title{Emotion challenge fact sheet}
 \author{iCV}
@@ -21,19 +23,20 @@ CBSR-CASIA
 Jianzhu, Guo
 \item Team leader address, phone number and email
 
-Address: No.95 Zhongguancun East Road, Haidian District, Beijing 100190, China
+Address: No.95 Zhongguancun East Road, Haidian District, Beijing 100190, China \\
+Phone: 86-15600118066 \\
 Email: guojianzhu1994@foxmail.com
-Phone: 86-15600118066
+
 \item Rest of the team members
 
-Shuai, Zhou \\
-Jilin, Wu \\
-Jun, Wan \\
+Shuai, Zhou (equal contribution)\\
+Jilin, Wu (equal contribution)\\
+Jun, Wan (corresponding author) \\
 Xiangyu, Zhu \\
 Zhen, Lei 
 \item Team website URL (if any)
 
-http://www.cbsr.ia.ac.cn/users/jwan/research.html 
+\url{http://www.cbsr.ia.ac.cn/users/jwan/research.html}
 \item Affiliation
 
 National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences (CASIA).
@@ -43,21 +46,37 @@ National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chin
 
 \begin{itemize}
 \item Title of the contribution
+
+\textbf{Multi-modality Network with Visual and Geometry based information for Micro Emotion Recognition}
+
 \item Final score
+
+It is not available now.
+
 \item General method description
 
-We fisrt extract the each ID's lamdmark feature, and subsract it's mean, then we get each ID's landmark offset of $R^{136\times1}$. And we use an modified AlexNet to extract the $R^{256\times1}$ feature of the $224\times224$ image on the second-last full connected layer. Then we concact the two features, and connect to a full connected layer. We use Hinge Loss to train the net, the ground truth is a single label indicating the complementary and dominant emotion.
+We fisrt extract the each ID's lamdmark feature, and subsract it's mean as the geometrical information, then we get each ID's landmark offset of $R^{136\times1}$. And we use an modified AlexNet to extract the $R^{256\times1}$ feature of the $224\times224$ image on the second-last full connected layer. Then we concact the two features, and connect to a full connected layer. We use Hinge Loss to train the net, the ground truth is a single label indicating the complementary and dominant emotion.
+
 \item References
+
+[1] Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. "ImageNet classification with deep convolutional neural networks." neural information processing systems (2012): 1097-1105.
+[2] Kazemi, Vahid, and Josephine Sullivan. "One millisecond face alignment with an ensemble of regression trees." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2014.
+
 \item Representative image / diagram of the method
+
+%\textbf{add flowchart here}
+
 \item Describe data preprocessing techniques applied (if any)
+
+%\textbf{add face detection and landmark here}
+Face detection and face landmark extraction using dlib and face crop and weakly aligned using the eyes center and the upper flip. We crop the image to $224 \times 224$ size.
+
 \end{itemize}
 
 
 \section{Face Landmarks Detection}
 \subsection{Features / Data representation}
 Describe features used or data representation model FOR FACE LANDMARKS DETECTION (if any)
-
-We use Dlib open source library to extract the landmark.
 
 \subsection{Dimensionality reduction}
 Dimensionality reduction technique applied FOR FACE LANDMARKS DETECTION (if any)
@@ -162,6 +181,7 @@ We use Python with OpenCV and Dlib package and Caffe deep learning framework.
 Training takes about an hour on Titan-X GPU, validation of 7000 images takes about half minute.
 \item General comments and impressions of the challenge?
 
-The task is hard, and it's hard to find effective texture feature to do this challenge.
+The task is hard, and it's hard to find effective texture feature to do this challenge well.
+
 \end{itemize}
 \end{document}
