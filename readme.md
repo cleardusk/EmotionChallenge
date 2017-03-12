@@ -15,7 +15,7 @@ It will load data preprocessed and caffe model to generate labels named `predict
 
 In this repo, some directory path may be confused, just be careful, contact me if any questions occured.
 
-**The preprocessed caffe model is just a experiement model, it may not be the best model trained by this method.**
+**The trained caffe model is just a experiement model, it may not has the best perfomance in this challenge.**
  
 Just upload `predictions.zip` to submit window then.
 
