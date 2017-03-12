@@ -5,13 +5,17 @@ First, you should generate the crop and aligned data on test Chanllenge dataset.
 ```
 python landmark.py
 ```
-All the crop and aligned data of 224x224 will place in `$ROOT/data/face_224`
+The crop and aligned of test data(final evaluation phase data) of 224x224 will place in `$ROOT/data/face_224`
 
-Then
+Then change to `cnn` dir, just type
 ```
 python extract.py
 ```
 It will load data preprocessed and caffe model to generate labels named `predictions.txt` and `predictions.zip` for test data. All details were considered.
+
+In this repo, some directory path may be confused, just be careful, contact me if any questions occured.
+
+**The preprocessed caffe model is just a experiement model, it may not be the best model trained by this method.**
  
 Just upload `predictions.zip` to submit window then.
 
