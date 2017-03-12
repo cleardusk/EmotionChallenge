@@ -71,8 +71,8 @@ def get_landmark_pool(data_dir, wfp, processes=24, scale=8):
 
 def main():
     # get_landmark_pool(processes=28, data_dir='../data/train_data', wfp='../data/train_landmark.json')
-    get_landmark_pool(processes=16, data_dir='../data/val_data', wfp='../data/val_landmark.json')
-    # get_landmark_pool(data_dir='../data/test_data', wfp='../data/test_landmark.json')
+    #get_landmark_pool(processes=16, data_dir='../data/val_data', wfp='../data/val_landmark.json')
+    get_landmark_pool(data_dir='../data/test_data', wfp='../data/test_landmark.json')
 
 
 if __name__ == '__main__':

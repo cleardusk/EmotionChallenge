@@ -1,9 +1,9 @@
 ### For final evaluation
 
 #### Submission
-First, you should generate the crop and aligned data on test Chanllenge dataset. Just change to cnn dir
+First, you should generate the crop and aligned data on test Chanllenge dataset. Just change to `crop_align` dir
 ```
-python landmark_224.py
+python landmark.py
 ```
 All the crop and aligned data of 224x224 will place in `$ROOT/data/face_224`
 
