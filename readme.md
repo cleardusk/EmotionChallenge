@@ -1,5 +1,3 @@
-### For final evaluation
-
 ### Citation
 If you use these models or code in your research, please cite:
 
@@ -13,6 +11,8 @@ If you use these models or code in your research, please cite:
   organization={IEEE}
 }
 ```
+
+### For final evaluation
 
 #### Submission
 First, you should generate the crop and aligned data on test Chanllenge dataset. Just change to `crop_align` dir
