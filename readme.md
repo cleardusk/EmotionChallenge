@@ -2,6 +2,8 @@
 
 ### Citation
 If you use these models or code in your research, please cite:
+
+```
 @inproceedings{guo2017multi,
   title={Multi-modality Network with Visual and Geometrical Information for Micro Emotion Recognition},
   author={Guo, Jianzhu and Zhou, Shuai and Wu, Jinlin and Wan, Jun and Zhu, Xiangyu and Lei, Zhen and Li, Stan Z},
@@ -10,6 +12,7 @@ If you use these models or code in your research, please cite:
   year={2017},
   organization={IEEE}
 }
+```
 
 #### Submission
 First, you should generate the crop and aligned data on test Chanllenge dataset. Just change to `crop_align` dir
