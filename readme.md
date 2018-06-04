@@ -10,6 +10,14 @@ If you use these models or code in your research, please cite:
   year={2017},
   organization={IEEE}
 }
+
+@article{guo2018dominant,
+  title={Dominant and Complementary Emotion Recognition from Still Images of Faces},
+  author={Guo, Jianzhu and Lei, Zhen and Wan, Jun and Avots, Egils and Hajarolasvadi, Noushin and Knyazev, Boris and Kuharenko, Artem and Jacques, Julio CS and Bar{\'o}, Xavier and Demirel, Hasan and others},
+  journal={IEEE Access},
+  year={2018},
+  publisher={IEEE}
+}
 ```
 
 ### For final evaluation
